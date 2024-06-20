@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
@@ -16,11 +16,11 @@ const App = () => {
             <li><Link to="/about">About Me</Link></li>
           </ul>
         </nav>
-        <Switch>
+        <Router>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
-        </Switch>
+        </Router>
       </div>
     </Router>
   );
