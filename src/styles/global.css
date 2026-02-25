@@ -1,0 +1,56 @@
+/* global.css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-color: #E5E8EB;
+  color: #22252B;
+  padding-top: 64px;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 0;
+}
+
+#home {
+  background-color: #E5E8EB;
+}
+
+#about {
+  background-color: #A3AEB1;
+}
+
+#projects {
+  background-color: #B09F95;
+}
+
+#contact {
+  background-color: #53655C;
+}
+
+.navbar {
+  background-color: rgba(34, 37, 43, 0.8);
+}
