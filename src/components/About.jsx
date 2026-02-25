@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography} from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
               Hello! I'm Jackson Saenz, a Computer Science student at the University of Texas at Dallas, graduating in December 2024. My academic journey has equipped me with a strong foundation in key areas such as Digital Logic and Computer Design, Database Systems, Data Structures and Algorithms Analysis, and Systems Programming.
             </Typography>
             <Typography variant="body1" paragraph>
-              I am proficient in several programming languages including Python, C/C++, HTML/CSS, Java, JavaScript, and TypeScript. My experience extends to various frameworks and libraries such as Node.js, Quasar, Vue.js, React.js, Flask, Express.js, Pandas, NumPy, Matplotlib, and Chart.js. I am also familiar with essential developer tools like Git, GitHub, Docker, VS Code, Visual Studio, SCIM, and Figma.
+              I am proficient in modern engineering workflows with JavaScript and TypeScript across React, Next.js, and Vite-based frontends, and Node.js/Express services on the backend. I work with PostgreSQL, REST APIs, Docker, GitHub Actions, and cloud deployment workflows, while still keeping strong fundamentals in Python and C/C++ for systems and performance-focused projects.
             </Typography>
             <Typography variant="body1" paragraph>
               Over the past few years, I have worked on several notable projects. For instance, I developed a web-based LED Controller using Express, Node.js, Python, and Vue.js that allows dynamic adjustment of LED lights through API endpoints. Another project involved creating a Multi-Threaded Hash Tree in C to compute hash values of large files efficiently. Additionally, I orchestrated a Simple Shell with advanced features like command history and piping, ensuring robust performance and user experience.

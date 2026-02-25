@@ -23,8 +23,8 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container">
-        {projects.map((project, idx) => (
-          <Card key={idx} sx={{ marginBottom: '20px', padding: '20px', backgroundColor: '#907B6F', color: '#22252B' }}>
+        {projects.map((project) => (
+          <Card key={project.title} sx={{ marginBottom: '20px', padding: '20px', backgroundColor: '#907B6F', color: '#22252B' }}>
             <CardContent>
               <Typography variant="h5" component="div" className="centered-title">
                 {project.title}
