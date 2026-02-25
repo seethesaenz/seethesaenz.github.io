@@ -8,13 +8,14 @@ body {
   background-color: #E5E8EB;
   color: #22252B;
   padding-top: 64px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .container {
-  width: 80%;
-  max-width: 800px;
+  width: min(92%, 860px);
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +33,7 @@ a:hover {
 }
 
 section {
-  padding: 60px 0;
+  padding: 56px 0;
 }
 
 #home {
@@ -41,6 +42,14 @@ section {
 
 #about {
   background-color: #A3AEB1;
+}
+
+#skills {
+  background-color: #BDC8CD;
+}
+
+#timeline {
+  background-color: #CCC8BC;
 }
 
 #projects {
@@ -53,4 +62,98 @@ section {
 
 .navbar {
   background-color: rgba(34, 37, 43, 0.8);
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  padding-top: 4px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(34, 37, 43, 0.24);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 0 26px 26px;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.timeline-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 26px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #22252B;
+  box-shadow: 0 0 0 3px rgba(229, 232, 235, 0.85);
+}
+
+.timeline-item.left .timeline-dot {
+  right: -6px;
+}
+
+.timeline-item.right .timeline-dot {
+  left: -6px;
+}
+
+@media (max-width: 900px) {
+  .timeline::before {
+    left: 12px;
+    transform: none;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 0 0 20px 32px;
+  }
+
+  .timeline-dot,
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 6px;
+    right: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .timeline-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
