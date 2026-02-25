@@ -17,7 +17,7 @@ const Contact = () => {
               Cheers :)
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
-              <Link href="mailto:saenzjack1@icloud.com" color="inherit" target="_blank" rel="noopener noreferrer">
+              <Link href="mailto:saenzjack1@outlook.com" color="inherit" target="_blank" rel="noopener noreferrer">
                 <EmailIcon sx={{ fontSize: 36 }} />
               </Link>
               <Link href="https://linkedin.com/in/saenzjack" color="inherit" target="_blank" rel="noopener noreferrer">
